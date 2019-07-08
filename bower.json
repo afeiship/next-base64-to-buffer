@@ -1,0 +1,28 @@
+{
+  "name": "next-base64-to-buffer",
+  "version": "0.0.1",
+  "description": "Base64 to buffer",
+  "main": "dist/next-base64-to-buffer.js",
+  "authors": [
+    "afei"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "next"
+  ],
+  "homepage": "https://github.com/afeiship/next-base64-to-buffer",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "build",
+    "src",
+    "gulp",
+    "gulpfile.js"
+  ]
+}
