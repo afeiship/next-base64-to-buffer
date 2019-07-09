@@ -2,7 +2,7 @@
  * name: next-base64-to-buffer
  * url: https://github.com/afeiship/next-base64-to-buffer
  * version: 1.0.0
- * date: 2019-07-08T07:22:05.429Z
+ * date: 2019-07-09T13:10:07.814Z
  * license: MIT
  */
 
@@ -12,7 +12,8 @@
   var FUNC = 'function';
 
   nx.base64ToBuffer = function(inDataURL) {
-    var buf = typeof Buffer.from === FUNC ? Buffer.from(inDataURL) : new Buffer(inDataURL);
+    var buf =
+      typeof Buffer.from === FUNC ? Buffer.from(inDataURL, 'base64') : new Buffer(inDataURL);
     return buf.toString('base64');
   };
 

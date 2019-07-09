@@ -4,7 +4,8 @@
   var FUNC = 'function';
 
   nx.base64ToBuffer = function(inDataURL) {
-    var buf = typeof Buffer.from === FUNC ? Buffer.from(inDataURL) : new Buffer(inDataURL);
+    var buf =
+      typeof Buffer.from === FUNC ? Buffer.from(inDataURL, 'base64') : new Buffer(inDataURL);
     return buf.toString('base64');
   };
 
